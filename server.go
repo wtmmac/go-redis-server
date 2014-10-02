@@ -106,6 +106,8 @@ func (srv *Server) ServeClient(conn net.Conn) (err error) {
 	return nil
 }
 
+// server factory.
+// return instance of server.
 func NewServer(c *Config) (*Server, error) {
 	srv := &Server{
 		Proto:        c.proto,
